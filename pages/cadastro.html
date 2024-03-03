@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/dashboard.css">
+    <script src="../app/cadastro.js" type="module"></script>
+    <title>Cadastro</title>
+</head>
+<body>
+    <header>
+        <div id="content">
+
+            <div id="user">
+               <a href="../index.html"><img class="logo" src="../assets/logo-removebg-preview.png" alt=""></a>
+            </div>
+
+            <span>Lista de Projetos</span>
+
+            <div id="logout">
+                <a href="cadastro.html"><button>Adicionar</button></a>
+            </div>
+        </div>
+    </header>
+
+    <div id="formulario">
+        <form id="formularioLogin" data-formulario>
+            <span class="title">Insira o novo projeto</span>
+
+            <div id="linha">
+                <label for="projeto">Projeto</label>
+                <input type="text" name="projeto" id="projeto" data-projeto/>
+            </div>
+
+            <div id="linha" class="senha">
+                <label for="descricao">Descrição</label>
+                <input type="text" name="descricao" id="descricao" data-descricao />
+            </div>
+            <div id="linha" class="status">
+                <label for="senha">Status</label>
+                <input type="text" name="status" id="status" data-status />
+            </div>
+            <div id="linha" class="motivo">
+                <label for="senha">Motivo</label>
+                <input type="text" name="motivo" id="motivo" data-motivo/>
+            </div>
+            
+            <div id="button">
+                <input type="submit" class="btnEntrar">
+                
+            </div>
+        </form>
+    </div>
+</body>
+</html>
