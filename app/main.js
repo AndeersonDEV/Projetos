@@ -1,13 +1,7 @@
 const endPointAPI = 'https://andeersondev.github.io/teste-base/dados.json'
 
 async function listaProjetos (){
-    const conexao = await fetch(endPointAPI,{
-        method: "GET",
-        headers: {
-            "Content-type": "application/json",
-            'Access-Control-Allow-Origin':'*'
-        }
-    })
+    const conexao = await fetch(endPointAPI)
     const conexaoConvertida = await conexao.json()
     
     return conexaoConvertida
@@ -17,7 +11,7 @@ async function CriaProjeto(titulo, descricao, status, motivo){
         method: "POST",
         headers: {
             "Content-type": "application/json",
-            'Access-Control-Allow-Origin':'*'
+            'Access-Control-Allow-Origin':'https://andeersondev.github.io/teste-base/dados.json'
             
         },
         body: JSON.stringify({
